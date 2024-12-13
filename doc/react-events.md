@@ -8,13 +8,11 @@ React uses a slightly different approach to event handling compared to tradition
 React wraps browser's native events in its synthetic event system. This synthetic event system provides a consistent API across different browsers and improves performance by normalizing the events.
 
 #### Native Event:
-```
-html
+```html
 <button onclick="handleClick()">Click Me</button>
 ```
 #### React Event:
-```
-jsx
+```jsx
 <button onClick={handleClick}>Click Me</button>
 ```
 
@@ -22,14 +20,12 @@ jsx
 In traditional JavaScript, you manually bind event handlers using .addEventListener(). In React, you attach event handlers directly within JSX, without needing to bind them explicitly.
 
 #### Traditional JS:
-```
-js
+```js
 const button = document.getElementById("button");
 button.addEventListener("click", handleClick);
 ```
 #### React:
-```
-jsx
+```jsx
 <button onClick={handleClick}>Click Me</button>
 ```
 
@@ -37,13 +33,11 @@ jsx
 In React, event handler functions (like onClick, onChange, etc.) are camelCased (e.g., onClick instead of onclick). This is part of React's JSX syntax.
 
 #### Example:
-```
-jsx
+```jsx
 <input type="text" onChange={handleChange} />
 ```
 In contrast, native HTML uses lowercase event names:
-```
-html
+```html
 <input type="text" onchange="handleChange()" />
 ```
 
@@ -51,22 +45,19 @@ html
 In React, you often need to pass additional arguments to event handlers. This can be done by using an arrow function or Function.prototype.bind.
 
 #### Using Arrow Function:
-```
-jsx
+```jsx
 <button onClick={() => handleClick(id)}>Click</button>
 ```
 
 Using .bind():
-```
-jsx
+```jsx
 <button onClick={handleClick.bind(this, id)}>Click</button>
 ```
 ### 5. Event Pooling
 React implements event pooling, which means React reuses the synthetic event objects for performance reasons. After the event handler finishes, React clears the event object to optimize memory usage. This can be a source of confusion if you're trying to access event properties asynchronously.
 
 you can use event.persist() to keep the event object alive:
-```
-jsx
+```jsx
 const handleClick = (event) => {
   event.persist();
   setTimeout(() => {
@@ -78,8 +69,7 @@ const handleClick = (event) => {
 React provides a preventDefault() method, just like native events, to prevent the default action. In React, this is typically used with forms or links to prevent page reloads or other default behaviors.
 
 #### Example:
-```
-jsx
+```jsx
 const handleSubmit = (event) => {
   event.preventDefault();
   // Handle form submission
@@ -90,7 +80,6 @@ In class components, you need to bind event handlers manually (in the constructo
 
 #### In Class Component:
 ```jsx
-Copy code
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -108,9 +97,8 @@ class MyComponent extends React.Component {
 ```
 
 In Functional Component:
-```
-jsx
-Copy code
+```jsx
+
 const MyComponent = () => {
   const handleClick = () => {
     console.log('Clicked!');

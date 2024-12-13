@@ -7,4 +7,6 @@
 4. [What is the difference between Element and Component in React?](./doc/elements-vs-components.md)
 5. [What are the advantages of React?](./doc/why-choose-react.md)
 6. [How events are different in React?](./doc/react-events.md)
-7. 
+7. [What are Pure Components in React?](./doc/Pure-Components-in-React.md)
+8. [What is state in React?](./doc/State-in-React.md)
+9. [What are props in React?](./doc/)
