@@ -47,3 +47,31 @@ html
 <input type="text" onchange="handleChange()" />
 ```
 
+### 4. Passing Arguments to Event Handlers
+In React, you often need to pass additional arguments to event handlers. This can be done by using an arrow function or Function.prototype.bind.
+
+#### Using Arrow Function:
+```
+jsx
+<button onClick={() => handleClick(id)}>Click</button>
+```
+
+Using .bind():
+```
+jsx
+<button onClick={handleClick.bind(this, id)}>Click</button>
+```
+### 5. Event Pooling
+React implements event pooling, which means React reuses the synthetic event objects for performance reasons. After the event handler finishes, React clears the event object to optimize memory usage. This can be a source of confusion if you're trying to access event properties asynchronously.
+
+To prevent this, you can use event.persist() to keep the event object alive:
+```
+jsx
+const handleClick = (event) => {
+  event.persist();
+  setTimeout(() => {
+    console.log(event.target);  // Safe to use
+  }, 1000);
+};
+```
+
