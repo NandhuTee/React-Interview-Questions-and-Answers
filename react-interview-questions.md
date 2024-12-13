@@ -20,4 +20,4 @@
 17. [Why React uses className over class attribute?](./doc/Why-React-Uses-className-over-class.md)
 18. [What is JSX and how it is different from HTML How browser understands JSX?](./doc/JSX-vs-HTML.md)
 19. [what is React ? What are the alternative? Diff between library and framework.3.  What is virtual DOM? Reconciliation? Diffing algorithm?](./doc/React-and-Related-Concepts.md)
-20. [global State vs local State ? What are the ways to create global states? What are the applications of it?]()
+20. [global State vs local State ? What are the ways to create global states? What are the applications of it?](./doc/Global-vs-Local-State.md)
