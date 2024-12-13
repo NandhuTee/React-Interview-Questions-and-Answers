@@ -1,10 +1,23 @@
 # React Interview Questions and Answers
-
+## React Essentials for Beginners
 ## Table of Contents
 1. [What is ReactJs?](./doc/react-basics.md)
 2. [What are the major features of React?](./doc/react-features.md)
 3. [What is JSX?](./doc/react-jsx.md)
 4. [What is the difference between Element and Component in React?](./doc/elements-vs-components.md)
 5. [What are the advantages of React?](./doc/why-choose-react.md)
-6. [What are the advantages of React?](./doc/why-choose-react.md)
-7. 
+6. [How events are different in React?](./doc/react-events.md)
+7. [What are Pure Components in React?](./doc/Pure-Components-in-React.md)
+8. [What is state in React?](./doc/State-in-React.md)
+9. [What are props in React?](./doc/Props-in-React.md)
+10. [What is the difference between state and props?](./doc/State-vs-Props-in-React.md)
+11. [What are synthetic events in React?](./doc/synthetic-events-in-react.md)
+12. [What is children prop in React?](./doc/children-prop-in-react.md)
+13. [What is a switching component in React?](./doc/react-switching-component.md)
+14. [Why you can't update props in React?](./doc/Understanding%20Props%20Immutability%20in%20React.md)
+15. [How Virtual DOM works in React?](./doc/react-virtual-dom.md)
+16. [What is React Fiber?](./doc/react-fiber.md)
+17. [Why React uses className over class attribute?](./doc/Why-React-Uses-className-over-class.md)
+18. [What is JSX and how it is different from HTML How browser understands JSX?](./doc/JSX-vs-HTML.md)
+19. [what is React ? What are the alternative? Diff between library and framework.3.  What is virtual DOM? Reconciliation? Diffing algorithm?](./doc/React-and-Related-Concepts.md)
+20. [global State vs local State ? What are the ways to create global states? What are the applications of it?]()
